@@ -31,12 +31,29 @@
         <img src="./images/R.png" alt="logo" width="130px;" height="90px" />
       </div>
       <div class="navigation">
-        <a href="#home">Home</a> <a href="#about">About</a
-        ><a href="#services">Services</a><a href="#concert">Concert</a
-        ><a href="#galery">Galery</a><a href="#contakt">Contakt</a>
+        <ul class="nav">
+          <li class="nav__link"><a href="#home">Home</a></li>
+          <li class="nav__link"><a href="#about">About</a></li>
+          <li class="nav__link"><a href="#services">Services</a></li>
+          <li class="nav__link"><a href="#concert">Concert</a></li>
+          <li class="nav__link"><a href="#galery">Galery</a></li>
+          <li class="nav__link"><a href="#contakt">Contakt</a></li>
+        </ul>
+      </div>
+      <div class="contacts__container">
+        <ul class="contacts__list">
+          <li class="contacts__inf">
+            <a href="tel:+48111111111" class="contacts">+48111111111</a>
+          </li>
+          <li class="contacts__inf">
+            <a href="mailto:dddddvvvvv@gmail.com" class="contacts"
+              >dddddvvvvv@gmail.com</a
+            >
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="music">
+    <!-- <div class="music">
       <h1 class="music__title">Muzyka w tle</h1>
       <audio
         id="background-music"
@@ -60,9 +77,9 @@
           onchange="changeVolume()"
         />
       </div>
-    </div>
+    </div> -->
 
     <!-- JS path -->
-    <script src="./js/audio.js"></script>
+    <script src="/js/audio.js"></script>
   </body>
 </html>
