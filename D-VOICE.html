@@ -36,5 +36,53 @@
         ><a href="#galery">Galery</a><a href="#contakt">Contakt</a>
       </div>
     </div>
+    <div class="music">
+      <h1 class="music__title">Muzyka w tle</h1>
+      <audio
+        id="background-music"
+        src="./audio/feel-the-sunshine-138635.mp3"
+        autoplay
+        loop
+      ></audio>
+      <div class="music__controls">
+        <button class="music__controls__toggle" id="toggle-music">
+          Włącz/Wyłącz muzykę
+        </button>
+
+        <input
+          class="music__controls__volume"
+          type="range"
+          id="volume-slider"
+          min="0"
+          max="1"
+          step="0.1"
+          value="0.5"
+          onchange="changeVolume()"
+        />
+      </div>
+    </div>
+
+    <script>
+      var audio = document.getElementById("background-music");
+      var volumeSlider = document.getElementById("volume-slider");
+      var volume = 0.5; // Głośność domyślna (0-1)
+
+      function toggleMusic() {
+        if (audio.paused) {
+          audio.play();
+          document.getElementById("toggle-music").textContent = "Wyłącz muzykę";
+        } else {
+          audio.pause();
+          document.getElementById("toggle-music").textContent = "Włącz muzykę";
+        }
+      }
+
+      function changeVolume() {
+        volume = volumeSlider.value;
+        audio.volume = volume;
+      }
+    </script>
+    <!-- JS path -->
+    <script src="./js/audio.js"></script>
   </body>
 </html>
