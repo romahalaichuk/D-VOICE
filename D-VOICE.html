@@ -62,26 +62,6 @@
       </div>
     </div>
 
-    <script>
-      var audio = document.getElementById("background-music");
-      var volumeSlider = document.getElementById("volume-slider");
-      var volume = 0.5; // Głośność domyślna (0-1)
-
-      function toggleMusic() {
-        if (audio.paused) {
-          audio.play();
-          document.getElementById("toggle-music").textContent = "Wyłącz muzykę";
-        } else {
-          audio.pause();
-          document.getElementById("toggle-music").textContent = "Włącz muzykę";
-        }
-      }
-
-      function changeVolume() {
-        volume = volumeSlider.value;
-        audio.volume = volume;
-      }
-    </script>
     <!-- JS path -->
     <script src="./js/audio.js"></script>
   </body>
