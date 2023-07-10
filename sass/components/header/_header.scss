@@ -40,6 +40,22 @@
     }
   }
 }
+.a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  background-color: gold;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: darkgoldenrod;
+    color: #fff;
+  }
+}
 .contacts__container {
   ul {
     list-style: none;

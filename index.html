@@ -28,21 +28,21 @@
 
   <body>
     <header class="header">
-      <div class="logo">
+      <div>
         <img src="./images/R.png" alt="logo" width="130px;" height="90px" />
       </div>
       <div class="navigation">
-        <ul class="nav">
-          <li class="nav__link"><a href="#home">Home</a></li>
-          <li class="nav__link"><a href="#about">About</a></li>
-          <li class="nav__link"><a href="#service">Services</a></li>
-          <li class="nav__link"><a href="#concert">Concerts</a></li>
-          <li class="nav__link"><a href="#galery">Galery</a></li>
-          <li class="nav__link"><a href="#footer">Contact</a></li>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#concert">Concerts</a></li>
+          <li><a href="#galery">Galery</a></li>
+          <button class="a" type="button">Contact</button>
         </ul>
       </div>
       <div class="contacts__container">
-        <ul class="contacts__list">
+        <ul>
           <li class="contacts__inf">
             <a href="tel:+48111111111" class="contacts">+48111111111</a>
           </li>
@@ -61,7 +61,7 @@
       <section class="concerts__container" id="concert"></section>
       <section class="galery__container" id="galery"></section>
     </main>
-    <footer id="footer" class="footer">
+    <footer class="footer">
       <div class="footer__content">
         <div class="footer__content__logo">
           <img src="path/to/logo.png" alt="Logo" />
@@ -94,7 +94,6 @@
         </div>
       </div>
     </footer>
-    <button class="open-modal">Otwórz okno modalne</button>
 
     <div class="modal">
       <div class="modal-content">
@@ -148,8 +147,17 @@
         />
       </div>
     </div> -->
+    <button id="openModalBtn">Open Modal</button>
 
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModalBtn" class="close">&times;</span>
+        <h2>Modal Window</h2>
+        <p>This is a simple modal window.</p>
+      </div>
+    </div>
     <!-- JS path -->
+    <script src="/js/test.js"></script>
     <script src="/js/footer-modal.js"></script>
     <script src="/js/audio.js"></script>
   </body>
