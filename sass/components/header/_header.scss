@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: var(--bg-color);
+  background-color: #20211679;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +24,7 @@
 
       a {
         text-decoration: none;
-        color: #000;
+        color: #000000;
         font-weight: bold;
         font-size: 18px;
         padding: 10px;
@@ -43,9 +43,10 @@
 .a {
   margin: 0 10px;
   text-decoration: none;
-  color: #000;
+  color: #000000;
   font-weight: bold;
   font-size: 18px;
+
   padding: 10px;
   background-color: gold;
   border-radius: 5px;
@@ -54,6 +55,7 @@
   &:hover {
     background-color: darkgoldenrod;
     color: #fff;
+    cursor: pointer;
   }
 }
 .contacts__container {
