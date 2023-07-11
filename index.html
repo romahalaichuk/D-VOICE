@@ -38,7 +38,7 @@
           <li><a href="#service">Services</a></li>
           <li><a href="#concert">Concerts</a></li>
           <li><a href="#galery">Galery</a></li>
-          <button class="a" type="button">Contact</button>
+          <button class="a" type="button" id="openModalBtn">Contact</button>
         </ul>
       </div>
       <div class="contacts__container">
@@ -84,45 +84,10 @@
             <img src="path/to/tiktok.svg" alt="TikTok" />
           </a>
         </div>
-        <div id="footer-modal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="footer-content">
-              <!-- Zawartość twojego footera tutaj -->
-            </div>
-          </div>
-        </div>
       </div>
     </footer>
 
-    <div class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="logo">
-          <img src="path/to/logo.png" alt="Logo" />
-        </div>
-        <div class="address">
-          <p>Państwo, Miasto, Ulica</p>
-        </div>
-        <div class="contact">
-          <p>Telefon: +48 123 456 789</p>
-          <p>Email: example@example.com</p>
-        </div>
-        <div class="social-media">
-          <a href="#" class="social-media__link">
-            <img src="path/to/facebook.png" alt="Facebook" />
-          </a>
-          <a href="#" class="social-media__link">
-            <img src="path/to/instagram.png" alt="Instagram" />
-          </a>
-          <a href="#" class="social-media__link">
-            <img src="path/to/tiktok.png" alt="TikTok" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- <div class="music">
+    <div class="music">
       <h1 class="music__title">Muzyka w tle</h1>
       <audio
         id="background-music"
@@ -146,18 +111,38 @@
           onchange="changeVolume()"
         />
       </div>
-    </div> -->
-    <button id="openModalBtn">Open Modal</button>
+    </div>
 
     <div id="modal" class="modal">
-      <div class="modal-content">
+      <div class="modal__content">
         <span id="closeModalBtn" class="close">&times;</span>
-        <h2>Modal Window</h2>
-        <p>This is a simple modal window.</p>
+        <div class="modal__header">
+          <img src="path/to/logo.png" alt="Logo" class="modal__logo" />
+        </div>
+        <div class="modal__body">
+          <h2 class="modal__title">Mastering wokali</h2>
+          <p class="modal__address">Państwo, Miasto, Ulica</p>
+          <p class="modal__contact">
+            Telefon: +48 123 456 789
+            <br />
+            Email: example@example.com
+          </p>
+          <div class="modal__social-media">
+            <a href="#" class="social-media__link">
+              <img src="path/to/facebook.png" alt="Facebook" />
+            </a>
+            <a href="#" class="social-media__link">
+              <img src="path/to/instagram.png" alt="Instagram" />
+            </a>
+            <a href="#" class="social-media__link">
+              <img src="path/to/tiktok.png" alt="TikTok" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
+
     <!-- JS path -->
-    <script src="/js/test.js"></script>
     <script src="/js/footer-modal.js"></script>
     <script src="/js/audio.js"></script>
   </body>

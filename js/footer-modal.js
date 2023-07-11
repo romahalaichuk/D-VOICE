@@ -1,21 +1,7 @@
-// Pobranie elementów
-var modal = document.getElementById("footer-modal");
-var closeButton = document.getElementsByClassName("close")[0];
+document.getElementById("openModalBtn").addEventListener("click", function () {
+  document.getElementById("modal").style.display = "block";
+});
 
-// Funkcja otwierająca okno modalne
-function openModal() {
-  modal.style.display = "block";
-}
-
-// Funkcja zamykająca okno modalne
-function closeModal() {
-  modal.style.display = "none";
-}
-
-// Obsługa zdarzeń
-closeButton.addEventListener("click", closeModal);
-window.addEventListener("click", function (event) {
-  if (event.target == modal) {
-    closeModal();
-  }
+document.getElementById("closeModalBtn").addEventListener("click", function () {
+  document.getElementById("modal").style.display = "none";
 });
