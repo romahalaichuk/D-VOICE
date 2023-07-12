@@ -2,4 +2,9 @@
   background-image: url(/images/home-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  @media (max-width: 768px) {
+    background-image: url(/images/home-background@2x.jpg);
+    background-size: cover;
+    background-position: center;
+  }
 }
