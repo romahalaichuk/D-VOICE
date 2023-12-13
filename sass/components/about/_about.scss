@@ -1,9 +1,9 @@
 .about__container {
-	background-image: url(images/about-background.jpg);
+	background-image: url(../images/about-background.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	@media (max-width: 768px) {
-		background-image: url(images/about-background@2x.jpg);
+		background-image: url(../images/about-background@2x.jpg);
 		background-size: cover;
 		background-position: center;
 	}

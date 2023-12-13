@@ -1,9 +1,9 @@
 .concerts__container {
-	background-image: url(images/concert-background.jpg);
+	background-image: url(../images/concert-background.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	@media (max-width: 768px) {
-		background-image: url(images/concert-background@2x.jpg);
+		background-image: url(../images/concert-background@2x.jpg);
 		background-size: cover;
 		background-position: center;
 	}
