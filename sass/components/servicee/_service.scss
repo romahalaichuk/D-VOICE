@@ -1,9 +1,9 @@
 .service__container {
-	background-image: url(../images/service-background.jpg);
+	background-image: url(./../images/service-background.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	@media (max-width: 768px) {
-		background-image: url(../images/service-background@2x.jpg);
+		background-image: url(./../images/service-background@2x.jpg);
 		background-size: cover;
 		background-position: center;
 	}
